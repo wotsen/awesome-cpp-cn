@@ -16,14 +16,17 @@ Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的
 * * *
 
 ### 目录
-* [标准库](#标准库)
+* [标准库与学习资料](#标准库与学习资料)
 * [框架](#框架)
 * [人工智能](#人工智能)
 * [异步事件循环](#异步事件循环)
+* [并发性](#并发性)
+* [网络](#网络)
+* [Web应用框架](#Web应用框架)
+* [rpc](#rpc)
 * [音频](#音频)
 * [生态学](#生态学)
 * [压缩](#压缩)
-* [并发性](#并发性)
 * [容器](#容器)
 * [密码学](#密码学)
 * [数据库](#数据库)
@@ -33,21 +36,19 @@ Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的
 * [图形](#图形)
 * [图像处理](#图像处理)
 * [国际化](#国际化)
+* [序列化](#序列化)
+* [XML](#XML)
 * [Json](#Json)
 * [日志](#日志)
 * [机器学习](#机器学习)
 * [数学](#数学)
 * [多媒体](#多媒体)
-* [网络](#网络)
 * [物理学](#物理学)
 * [机器人学](#机器人学)
 * [科学计算](#科学计算)
 * [脚本](#脚本)
-* [序列化](#序列化)
 * [视频](#视频)
 * [虚拟机](#虚拟机)
-* [Web应用框架](#Web应用框架)
-* [XML](#XML)
 * [多项混杂](#多项混杂)
 * [软件](#软件)
 * [编译器](#编译器)
@@ -94,7 +95,7 @@ Awesome 系列虽然挺全，但基本只对收录的资源做了极为简要的
 * * *
  -->
 
-### 标准库
+### 标准库与学习资料
 
 C++标准库，包括了STL容器，算法和函数等。
 
@@ -102,6 +103,11 @@ C++标准库，包括了STL容器，算法和函数等。
 *   Standard Template Library：标准模板库。[官网](http://en.wikipedia.org/wiki/Standard_Template_Library)
 *   C POSIX library：POSIX系统的C标准库规范。[官网](http://en.wikipedia.org/wiki/C_POSIX_library)
 *   ISO C++ Standards Committee：C++标准委员会。[官网](https://github.com/cplusplus)
+*   modern-cpp-features：cpp新特性介绍。[官网](https://github.com/AnthonyCalandra/modern-cpp-features)
+*   modern-cpp-tutorial：c++新特性书籍。[官网](https://github.com/changkun/modern-cpp-tutorial)
+*   design_patterns：设计模式。[官网](https://github.com/me115/design_patterns)
+*   interview：面试相关。[官网](https://github.com/huihut/interview)
+*   styleguide：谷歌开源规范。[官网](https://github.com/google/styleguide)
 
 ### 框架
 
@@ -110,6 +116,7 @@ C++通用框架和库
 *   Apache C++ Standard Library：是一系列算法，容器，迭代器和其他基本组件的集合。[官网](http://stdcxx.apache.org/)
 *   ASL：Adobe源代码库提供了同行的评审和可移植的C++源代码库。[官网](http://stlab.adobe.com/)
 *   Boost：大量通用C++库的集合。[官网](https://github.com/boostorg)
+*   co：一个优雅、高效的 C++ 基础库，支持 Linux, Windows 与 Mac 平台。[官网](https://github.com/idealvin/co)
 *   BDE：来自于彭博资讯实验室的开发环境。[官网](https://github.com/bloomberg/bde)
 *   Cinder：提供专业品质创造性编码的开源开发社区。[官网](http://libcinder.org/)
 *   Cxxomfort：轻量级的，只包含头文件的库，将C++ 11的一些新特性移植到C++03中。[官网](http://ryan.gulix.cl/fossil.cgi/cxxomfort/)
@@ -132,6 +139,8 @@ C++通用框架和库
 *   Ultimate++：C++跨平台快速应用程序开发框架。[官网](http://www.ultimatepp.org/)
 *   Windows Template Library：用于开发Windows应用程序和UI组件的C++库。[官网](http://sourceforge.net/projects/wtl/)
 *   Yomm11：C++11的开放multi-methods。[官网](https://github.com/jll63/yomm11)
+*   DistributedSystem-Series：主要包含分布式计算、分布式系统、数据存储、虚拟化、网络、操作系统等几个部分。[官网](https://github.com/wx-chevalier/DistributedSystem-Series)
+*   gear-lib：一组通用的Ｃ基础库，全部用POSIX C实现，目标是为了跨平台兼容linux, windows, android, ios，适用于物联网，嵌入式，以及网络服务开发等场景。[官网](https://github.com/gozfree/gear-lib)
 
 ### 人工智能
 
@@ -145,6 +154,70 @@ C++通用框架和库
 *   libev：功能齐全，高性能的时间循环，轻微地仿效libevent，但是不再像libevent一样有局限性，也修复了它的一些bug。[官网](http://libev.schmorp.de/)
 *   libevent：事件通知库。[官网](http://libevent.org/)
 *   libuv：跨平台异步I/O。[官网](https://github.com/libuv/libuv)
+
+### 并发性
+
+并发执行和多线程，协程
+
+*   Boost.Compute：用于OpenCL的C++GPU计算库。[官网](https://github.com/kylelutz/compute)
+*   Bolt：针对GPU进行优化的C++模板库。[官网](https://github.com/HSA-Libraries/Bolt)
+*   C++React：用于C++11的反应性编程库。[官网](https://github.com/schlangster/cpp.react)
+*   Intel TBB：Intel线程构件块。[官网](https://www.threadingbuildingblocks.org/)
+*   Libclsph：基于OpenCL的GPU加速SPH流体仿真库。[官网](https://github.com/libclsph/libclsph)
+*   OpenCL：并行编程的异构系统的开放标准。[官网](https://www.khronos.org/opencl/)
+*   OpenMP：OpenMP API。[官网](http://openmp.org/)
+*   Thrust：类似于C++标准模板库的并行算法库。[官网](http://thrust.github.io/)
+*   HPX：用于任何规模的并行和分布式应用程序的通用C++运行时系统。[官网](https://github.com/STEllAR-GROUP/hpx/)
+*   VexCL：用于OpenCL/CUDA 的C++向量表达式模板库。[官网](https://github.com/ddemidov/vexcl)
+*   NtyCo：协程实现的事件驱动网络。[官网](https://github.com/wangbojing/NtyCo)
+*   libgo：类似go风格的协程库。[官网](https://github.com/yyzybb537/libgo)
+*   coroutine：一个非常简洁的协程库实现，可用学习协程原理。[官网](https://github.com/cloudwu/coroutine)
+*   thread-pool：简单的线程池实现。[官网](https://github.com/wotsen/code-collections/tree/master/thread-pool)
+
+### 网络
+
+*   ACE：C++面向对象网络编程工具包。[官网](http://www.cs.wustl.edu/~schmidt/ACE.html)
+*   Boost.Asio：用于网络和底层I/O编程的跨平台的C++库。[官网](http://think-async.com/)
+*   Casablanca：C++ REST SDK。[官网](http://casablanca.codeplex.com/)
+*   cpp-netlib：高级网络编程的开源库集合。[官网](http://cpp-netlib.org/)
+*   Dyad.c：C语言的异步网络。[官网](https://github.com/rxi/dyad)
+*   libcurl：多协议文件传输库。[官网](http://curl.haxx.se/libcurl/) 
+*   Mongoose：非常轻量级的网络服务器。[官网](https://github.com/cesanta/mongoose)
+*   Muduo：用于Linux多线程服务器的C++非阻塞网络库。[官网](https://github.com/chenshuo/muduo)
+*   net_skeleton：C/C++的TCP 客户端/服务器库。[官网](https://github.com/cesanta/net_skeleton)
+*   nope.c：基于C语言的超轻型软件平台，用于可扩展的服务器端和网络应用。 对于C编程人员，可以考虑node.js。[官网](https://github.com/riolet/nope.c)
+*   Onion：C语言HTTP服务器库，其设计为轻量级，易使用。[官网](https://github.com/davidmoreno/onion)
+*   POCO：用于构建网络和基于互联网应用程序的C++类库，可以运行在桌面，服务器，移动和嵌入式系统。[官网](https://github.com/pocoproject)
+*   RakNet：为游戏开发人员提供的跨平台的开源C++网络引擎。[官网](https://github.com/OculusVR/RakNet)
+*   Tuf o：用于Qt之上的C++构建的异步Web框架。[官网](https://github.com/vinipsmaker/tufao)
+*   WebSocket++：基于C++/Boost Aiso的websocket 客户端/服务器库。[官网](https://github.com/zaphoyd/websocketpp)
+*   ZeroMQ：高速，模块化的异步通信库。[官网](http://zeromq.org/)
+*   acl：一个跨平台（支持LINUX，WIN32，Solaris，MacOS，FreeBSD）的网络通信库及服务器编程框架，同时提供更多的实用功能库。[官网](https://github.com/acl-dev/acl)
+*   cpprestsdk：微软的REST SDK是一个Microsoft项目，用于使用现代异步C ++ API设计以本机代码进行基于云的客户端-服务器通信。该项目旨在帮助C ++开发人员连接到服务并与之交互。[官网](https://github.com/microsoft/cpprestsdk)
+*   HP-Socket：高性能网络框架。[官网](https://github.com/ldcsaa/HP-Socket)
+*   handy：简洁易用的异步网络框架，类似libuv。[官网](https://github.com/yedf/handy)
+*   mqtt：mqtt协议文档。[官网](https://github.com/mcxiaoke/mqtt)
+*   webrtc：webrtc。[官网](https://github.com/JumpingYang001/webrtc)
+*   mosquitto：标准mqtt的broker实现。[官网](https://github.com/eclipse/mosquitto)
+*   pubsubclient：mqtt客户端。[官网](https://github.com/knolleary/pubsubclient)
+
+### Web应用框架
+
+*   Civetweb：提供易于使用，强大的，C/C++嵌入式Web服务器，带有可选的CGI，SSL和Lua支持。[官网](https://github.com/bel2125/civetweb)
+*   CppCMS：免费高性能的Web开发框架（不是 CMS）。[官网](http://cppcms.com/)
+*   Crow：一个C++微型web框架（灵感来自于Python Flask）。[官网](https://github.com/ipkn/crow)
+*   Kore：使用C语言开发的用于web应用程序的超快速和灵活的web服务器/框架。[官网](https://kore.io/)
+*   libOnion：轻量级的库，帮助你使用C编程语言创建web服务器。[官网](http://www.coralbits.com/libonion/)
+*   QDjango：使用C++编写的，基于Qt库的web框架，试图效仿Django API，因此得此名。[官网](https://github.com/jlaine/qdjango/)
+*   Wt：开发Web应用的C++库。[官网](http://www.webtoolkit.eu/wt)
+*   uWebSockets：经过精心优化的速度和内存占用量，μWebSockets的速度足以使加密的TLS 1.3消息传递比大多数替代服务器甚至可以进行未经加密的明文消息传递更快。[官网](https://github.com/uNetworking/uWebSockets)
+*   nginx：高性能的web服务器及代理服务器。[官网](https://github.com/nginx/nginx)，[书籍](https://github.com/taobao/nginx-book)
+*   oatpp：一个现代化的web服务器框架。[官网](https://github.com/oatpp/oatpp)
+
+### rpc
+
+*   gayrpc：跨平台全双工双向(异步)RPC系统,也即通信两端都可以同时作为RPC服务方和客户端。[官网](https://github.com/IronsDu/gayrpc)
+*   grpc：谷歌rpc，可使用多种数据协议。[官网](https://github.com/grpc/grpc)
 
 ### 音频
 
@@ -185,21 +258,6 @@ C++通用框架和库
 *   ZLib：非常紧凑的数据流压缩库。[官网](http://zlib.net/)
 *   ZZIPlib：提供ZIP归档的读权限。[官网](http://zziplib.sourceforge.net/)
 
-### 并发性
-
-并发执行和多线程
-
-*   Boost.Compute：用于OpenCL的C++GPU计算库。[官网](https://github.com/kylelutz/compute)
-*   Bolt：针对GPU进行优化的C++模板库。[官网](https://github.com/HSA-Libraries/Bolt)
-*   C++React：用于C++11的反应性编程库。[官网](https://github.com/schlangster/cpp.react)
-*   Intel TBB：Intel线程构件块。[官网](https://www.threadingbuildingblocks.org/)
-*   Libclsph：基于OpenCL的GPU加速SPH流体仿真库。[官网](https://github.com/libclsph/libclsph)
-*   OpenCL：并行编程的异构系统的开放标准。[官网](https://www.khronos.org/opencl/)
-*   OpenMP：OpenMP API。[官网](http://openmp.org/)
-*   Thrust：类似于C++标准模板库的并行算法库。[官网](http://thrust.github.io/)
-*   HPX：用于任何规模的并行和分布式应用程序的通用C++运行时系统。[官网](https://github.com/STEllAR-GROUP/hpx/)
-*   VexCL：用于OpenCL/CUDA 的C++向量表达式模板库。[官网](https://github.com/ddemidov/vexcl)
-
 ### 容器
 
 *   C++ B-tree：基于B树数据结构，实现命令内存容器的模板库。[官网](https://code.google.com/p/cpp-btree/)
@@ -234,6 +292,9 @@ C++通用框架和库
 *   MySQL++：封装了MySql的C API的C++ 包装器。[官网](http://www.tangentsoft.net/mysql++/)
 *   RocksDB：来自Facebook的嵌入键值的快速存储。[官网](https://github.com/facebook/rocksdb)
 *   SQLite：一个完全嵌入式的，功能齐全的关系数据库，只有几百KB，可以正确包含到你的项目中。[官网](http://www.sqlite.org/)
+*   SQLiteCpp：sqlite的c++封装。[官网](https://github.com/SRombauts/SQLiteCpp)
+*   redis-3.0-annotated：带注释的redis。[官网](https://github.com/huangz1990/redis-3.0-annotated)
+*   memcached：高性能的分布式缓存。[官网](https://github.com/memcached/memcached)
 
 ### 调试
 
@@ -309,6 +370,31 @@ C++通用框架和库
 *   IBM ICU：提供Unicode 和全球化支持的C、C++ 和Java库。[官网](http://site.icu-project.org/)
 *   libiconv：用于不同字符编码之间的编码转换库。[官网](http://www.gnu.org/software/libiconv/)
 
+### 序列化
+
+*   Cap'n Proto：快速数据交换格式和RPC系统。[官网](http://kentonv.github.io/capnproto/)
+*   cereal：C++11 序列化库。[官网](https://github.com/USCiLab/cereal)
+*   FlatBuffers：内存高效的序列化库。[官网](https://github.com/google/flatbuffers)
+*   MessagePack：C/C++的高效二进制序列化库，例如 JSON。[官网](https://github.com/msgpack/msgpack-c)
+*   protobuf：协议缓冲，谷歌的数据交换格式。[官网](http://code.google.com/p/protobuf/)
+*   protobuf-c：C语言的协议缓冲实现。[官网](https://github.com/protobuf-c/protobuf-c)
+*   SimpleBinaryEncoding：用于低延迟应用程序的对二进制格式的应用程序信息的编码和解码。[官网](https://github.com/real-logic/simple-binary-encoding)
+*   Thrift：高效的跨语言IPC/RPC，用于C++，Java，Python，PHP，C#和其它多种语言中，最初由Twitter开发。[官网](https://thrift.apache.org/)
+
+### XML
+
+XML就是个垃圾，XML的解析很烦人，对于计算机它也是个灾难。这种糟糕的东西完全没有存在的理由了。-Linus Torvalds
+
+*   Expat：用C语言编写的XML解析库。[官网](http://www.libexpat.org/)
+*   Libxml2：Gnome的XML C解析器和工具包。[官网](http://xmlsoft.org/)
+*   libxml++：C++的XML解析器。[官网](http://libxmlplusplus.sourceforge.net/)
+*   PugiXML：用于C++的，支持XPath的轻量级，简单快速的XML解析器。[官网](http://pugixml.org/)
+*   RapidXml：试图创建最快速的XML解析器，同时保持易用性，可移植性和合理的W3C兼容性。[官网](http://rapidxml.sourceforge.net/)
+*   TinyXML：简单小型的C++XML解析器，可以很容易地集成到其它项目中。[官网](http://sourceforge.net/projects/tinyxml/)
+*   TinyXML2：简单快速的C++CML解析器，可以很容易集成到其它项目中。[官网](https://github.com/leethomason/tinyxml2)
+*   TinyXML++：TinyXML的一个全新的接口，使用了C++的许多许多优势，模板，异常和更好的异常处理。[官网](https://code.google.com/p/ticpp/)
+*   Xerces-C++：用可移植的C++的子集编写的XML验证解析器。[官网](http://xerces.apache.org/xerces-c/)
+
 ### Json
 
 *   frozen：C/C++的Json解析生成器。[官网](https://github.com/cesanta/frozen)
@@ -327,6 +413,8 @@ C++通用框架和库
 *   RapidJSON：用于C++的快速JSON 解析生成器，包含SAX和DOM两种风格的API。[官网](https://github.com/miloyip/rapidjson)
 *   YAJL：C语言中快速流JSON解析库。[官网](https://github.com/lloyd/yajl)
 *   json：一个现代 C++ JSON解析库。语法更直观，集成更简单，经过严格测试的同时对内存效率、速度有深入地考虑。[官网](https://github.com/nlohmann/json)
+*   iguana：非入侵式的结构体转json库。[官网](https://github.com/qicosmos/iguana)
+*   yaml-cpp：yaml库，属于Json子类。[官网](https://github.com/jbeder/yaml-cpp)
 
 ### 日志
 
@@ -335,6 +423,9 @@ C++通用框架和库
 *   Log4cpp：一系列C++类库，灵活添加日志到文件，系统日志，IDSA和其他地方。[官网](http://log4cpp.sourceforge.net/)
 *   templog：轻量级C++库，可以添加日志到你的C++应用程序中。[官网](http://www.templog.org/)
 *   spdlog：高性能，只包含头文件。[官网](https://github.com/gabime/spdlog)
+*   loguru：一个现代化的日志库。[官网](https://github.com/emilk/loguru)
+*   dbg-macro：printf风格的打印。[官网](https://github.com/sharkdp/dbg-macro)
+*   fmt：字符串格式化。[官网](https://github.com/fmtlib/fmt)
 
 ### 机器学习
 
@@ -365,25 +456,6 @@ C++通用框架和库
 *   QtAv：基于Qt和FFmpeg的多媒体播放框架，能够帮助你轻而易举地编写出一个播放器。[官网](https://github.com/wang-bin/QtAV)
 *   SDL：简单直控媒体层。[官网](http://www.libsdl.org/)
 *   SFML：快速，简单的多媒体库。[官网](http://www.sfml-dev.org/)
-
-### 网络
-
-*   ACE：C++面向对象网络编程工具包。[官网](http://www.cs.wustl.edu/~schmidt/ACE.html)
-*   Boost.Asio：用于网络和底层I/O编程的跨平台的C++库。[官网](http://think-async.com/)
-*   Casablanca：C++ REST SDK。[官网](http://casablanca.codeplex.com/)
-*   cpp-netlib：高级网络编程的开源库集合。[官网](http://cpp-netlib.org/)
-*   Dyad.c：C语言的异步网络。[官网](https://github.com/rxi/dyad)
-*   libcurl：多协议文件传输库。[官网](http://curl.haxx.se/libcurl/) 
-*   Mongoose：非常轻量级的网络服务器。[官网](https://github.com/cesanta/mongoose)
-*   Muduo：用于Linux多线程服务器的C++非阻塞网络库。[官网](https://github.com/chenshuo/muduo)
-*   net_skeleton：C/C++的TCP 客户端/服务器库。[官网](https://github.com/cesanta/net_skeleton)
-*   nope.c：基于C语言的超轻型软件平台，用于可扩展的服务器端和网络应用。 对于C编程人员，可以考虑node.js。[官网](https://github.com/riolet/nope.c)
-*   Onion：C语言HTTP服务器库，其设计为轻量级，易使用。[官网](https://github.com/davidmoreno/onion)
-*   POCO：用于构建网络和基于互联网应用程序的C++类库，可以运行在桌面，服务器，移动和嵌入式系统。[官网](https://github.com/pocoproject)
-*   RakNet：为游戏开发人员提供的跨平台的开源C++网络引擎。[官网](https://github.com/OculusVR/RakNet)
-*   Tuf o：用于Qt之上的C++构建的异步Web框架。[官网](https://github.com/vinipsmaker/tufao)
-*   WebSocket++：基于C++/Boost Aiso的websocket 客户端/服务器库。[官网](https://github.com/zaphoyd/websocketpp)
-*   ZeroMQ：高速，模块化的异步通信库。[官网](http://zeromq.org/)
 
 ### 物理学
 
@@ -424,17 +496,6 @@ C++通用框架和库
 *   V7：嵌入式的JavaScript 引擎。[官网](https://github.com/cesanta/v7)
 *   V8：谷歌的快速JavaScript引擎，可以被嵌入到任何C++应用程序中。[官网](http://code.google.com/p/v8/)
 
-### 序列化
-
-*   Cap'n Proto：快速数据交换格式和RPC系统。[官网](http://kentonv.github.io/capnproto/)
-*   cereal：C++11 序列化库。[官网](https://github.com/USCiLab/cereal)
-*   FlatBuffers：内存高效的序列化库。[官网](https://github.com/google/flatbuffers)
-*   MessagePack：C/C++的高效二进制序列化库，例如 JSON。[官网](https://github.com/msgpack/msgpack-c)
-*   protobuf：协议缓冲，谷歌的数据交换格式。[官网](http://code.google.com/p/protobuf/)
-*   protobuf-c：C语言的协议缓冲实现。[官网](https://github.com/protobuf-c/protobuf-c)
-*   SimpleBinaryEncoding：用于低延迟应用程序的对二进制格式的应用程序信息的编码和解码。[官网](https://github.com/real-logic/simple-binary-encoding)
-*   Thrift：高效的跨语言IPC/RPC，用于C++，Java，Python，PHP，C#和其它多种语言中，最初由Twitter开发。[官网](https://thrift.apache.org/)
-
 ### 视频
 
 *   libvpx：VP8/VP9编码解码SDK。[官网](http://www.webmproject.org/code/)
@@ -448,30 +509,7 @@ C++通用框架和库
 *   CarpVM：C中有趣的VM，让我们一起来看看这个。[官网](https://github.com/tekknolagi/carp)
 *   MicroPython：旨在实现单片机上Python3.x的实现。[官网](https://github.com/micropython/micropython)
 *   TinyVM：用纯粹的ANSI C编写的小型，快速，轻量级的虚拟机。[官网](https://github.com/jakogut/tinyvm)
-
-### Web应用框架
-
-*   Civetweb：提供易于使用，强大的，C/C++嵌入式Web服务器，带有可选的CGI，SSL和Lua支持。[官网](https://github.com/bel2125/civetweb)
-*   CppCMS：免费高性能的Web开发框架（不是 CMS）。[官网](http://cppcms.com/)
-*   Crow：一个C++微型web框架（灵感来自于Python Flask）。[官网](https://github.com/ipkn/crow)
-*   Kore：使用C语言开发的用于web应用程序的超快速和灵活的web服务器/框架。[官网](https://kore.io/)
-*   libOnion：轻量级的库，帮助你使用C编程语言创建web服务器。[官网](http://www.coralbits.com/libonion/)
-*   QDjango：使用C++编写的，基于Qt库的web框架，试图效仿Django API，因此得此名。[官网](https://github.com/jlaine/qdjango/)
-*   Wt：开发Web应用的C++库。[官网](http://www.webtoolkit.eu/wt)
-
-### XML
-
-XML就是个垃圾，XML的解析很烦人，对于计算机它也是个灾难。这种糟糕的东西完全没有存在的理由了。-Linus Torvalds
-
-*   Expat：用C语言编写的XML解析库。[官网](http://www.libexpat.org/)
-*   Libxml2：Gnome的XML C解析器和工具包。[官网](http://xmlsoft.org/)
-*   libxml++：C++的XML解析器。[官网](http://libxmlplusplus.sourceforge.net/)
-*   PugiXML：用于C++的，支持XPath的轻量级，简单快速的XML解析器。[官网](http://pugixml.org/)
-*   RapidXml：试图创建最快速的XML解析器，同时保持易用性，可移植性和合理的W3C兼容性。[官网](http://rapidxml.sourceforge.net/)
-*   TinyXML：简单小型的C++XML解析器，可以很容易地集成到其它项目中。[官网](http://sourceforge.net/projects/tinyxml/)
-*   TinyXML2：简单快速的C++CML解析器，可以很容易集成到其它项目中。[官网](https://github.com/leethomason/tinyxml2)
-*   TinyXML++：TinyXML的一个全新的接口，使用了C++的许多许多优势，模板，异常和更好的异常处理。[官网](https://code.google.com/p/ticpp/)
-*   Xerces-C++：用可移植的C++的子集编写的XML验证解析器。[官网](http://xerces.apache.org/xerces-c/)
+*   lxc：linux容器。[官网](https://github.com/lxc/lxc)
 
 ### 多项混杂
 
@@ -488,6 +526,7 @@ XML就是个垃圾，XML的解析很烦人，对于计算机它也是个灾难�
 *   libevil：许可证管理器。[官网](https://github.com/avati/libevil)
 *   libusb：允许移动访问USB设备的通用USB库。[官网](http://www.libusb.org/)
 *   PCRE：正则表达式C库，灵感来自于Perl中正则表达式的功能。[官网](http://pcre.org/)
+*   re2：谷歌开发的正则表达式库，像PCRE，Perl，python一样。[官网](https://github.com/google/re2)
 *   Remote Call Framework：C++的进程间通信框架。[官网](http://www.deltavsoft.com/)
 *   Scintilla：开源的代码编辑控件。[官网](http://scintilla.org/)
 *   Serial Communication Library：C++语言编写的跨平台，串口库。[官网](https://github.com/wjwwood/serial)
@@ -505,6 +544,10 @@ XML就是个垃圾，XML的解析很烦人，对于计算机它也是个灾难�
 ### 软件
 
 用于创建开发环境的软件
+
+### 操作系统
+
+*   TencentOS-tiny：腾讯面向物联网领域开发的实时操作系统，具有低功耗，低资源占用，模块化，安全可靠等特点，可有效提升物联网终端产品开发效率。[官网](https://github.com/Tencent/TencentOS-tiny)
 
 ### 编译器
 
@@ -537,6 +580,7 @@ C/C++调试器列表
 *   Comparison of debuggers：来自维基百科的调试器列表。[官网](http://en.wikipedia.org/wiki/Comparison_of_debuggers)
 *   GDB：GNU调试器。[官网](https://www.gnu.org/software/gdb)
 *   Valgrind：内存调试，内存泄露检测，性能分析工具。[官网](http://valgrind.org/)
+*   gperftools：性能测试工具。[官网](https://github.com/gperftools/gperftools)
 
 ### 集成开发环境（IDE）
 
@@ -563,7 +607,7 @@ C/C++集成开发环境列表
 
 *   Bear：用于为clang工具生成编译数据库的工具。[官网](https://github.com/rizsotto/Bear)
 *   Biicode：基于文件的简单依赖管理器。[官网](https://www.biicode.com/)
-*   CMake：跨平台的免费开源软件用于管理软件使用独立编译的方法进行构建的过程。[官网](http://www.cmake.org/)
+*   CMake：跨平台的免费开源软件用于管理软件使用独立编译的方法进行构建的过程。[官网](http://www.cmake.org/)，[书籍示例](https://github.com/dev-cafe/cmake-cookbook)
 *   CPM：基于CMake和Git的C++包管理器。[官网](https://github.com/iauns/cpm)
 *   FASTBuild：高性能，开源的构建系统，支持高度可扩展性的编译，缓冲和网络分布。[官网](http://www.fastbuild.org/docs/home.html)
 *   Ninja：专注于速度的小型构建系统。[官网](http://martine.github.io/ninja/)
@@ -580,6 +624,7 @@ C/C++集成开发环境列表
 *   OCLint：用于C，C++和Objective-C的静态源代码分析工具，用于提高质量，减少瑕疵。[官网](http://oclint.org/)
 *   [Clang Static Analyzer](http://hao.jobbole.com/clang-static-analyzer/)：查找C，C++和Objective-C程序bug的源代码分析工具。[官网](http://clang-analyzer.llvm.org/index.html)
 *   静态代码分析工具清单（[开源篇](http://hao.jobbole.com/static_code_analysis_tool_list_opensource/)）：来自维基百科的静态代码分析工具列表。[官网](http://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#C.2FC.2B.2B)
+*   Sourcetrail：免费的开放源代码跨平台资源浏览器，可帮助您提高不熟悉的源代码的工作效率。[官网](https://github.com/CoatiSoftware/Sourcetrail)
    
 
 <h3 id="weibo-weixin">微信公众号</h3>
